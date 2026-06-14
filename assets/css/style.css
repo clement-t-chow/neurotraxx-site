@@ -191,6 +191,14 @@ a { color: var(--accent); text-decoration: none; }
   gap: 2rem;
 }
 
+.screens + .screens {
+  margin-top: 2rem;
+}
+
+.screen.wide {
+  grid-column: 1 / -1;
+}
+
 .screen img {
   width: 100%;
   border-radius: 8px;
