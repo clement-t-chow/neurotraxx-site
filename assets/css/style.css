@@ -215,7 +215,7 @@ a { color: var(--accent); text-decoration: none; }
 }
 
 .video-wrap {
-  max-width: 900px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .video-wrap video {
