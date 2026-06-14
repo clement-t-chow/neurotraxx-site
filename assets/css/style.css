@@ -255,7 +255,7 @@ a { color: var(--accent); text-decoration: none; }
 
 #contact { text-align: center; }
 #contact p { color: var(--text-dim); margin-bottom: 0.5rem; }
-#contact .contact-extra { font-size: 0.9rem; text-align: justify; }
+#contact .contact-extra { font-size: 0.9rem; text-align: center; }
 
 .pub-list {
   margin: 1.5rem 0;
