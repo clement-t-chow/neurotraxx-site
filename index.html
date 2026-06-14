@@ -6,7 +6,7 @@ title: Subcortical Navigation & Mapping
     <div class="hero-content">
       <div class="hero-text">
         <span class="eyebrow">Explore the brain, your way</span>
-        <h1>neuroscience.<br>exploration.<br>navigation.</h1>
+        <h1 class="typewriter" data-lines="neuroscience.|exploration.|navigation."><span class="typewriter-text"></span><span class="typewriter-cursor">|</span></h1>
         <p>NeuroTraxx turns diffusion MRI into living 3D maps of the brain's
            wiring — letting you explore white matter pathways and subcortical
            structures with fluid, synchronized 2D and 3D views. Built to
@@ -120,3 +120,29 @@ title: Subcortical Navigation & Mapping
     </p>
     <p>&copy; 2026 NeuroTraxx. All rights reserved.</p>
   </footer>
+
+  <script>
+    (function () {
+      var el = document.querySelector('.typewriter');
+      if (!el) return;
+      var textEl = el.querySelector('.typewriter-text');
+      var lines = el.dataset.lines.split('|');
+      var lineIdx = 0, charIdx = 0;
+
+      function type() {
+        if (lineIdx >= lines.length) return;
+        var line = lines[lineIdx];
+        if (charIdx <= line.length) {
+          var done = lines.slice(0, lineIdx).join('\n');
+          textEl.textContent = (done ? done + '\n' : '') + line.slice(0, charIdx);
+          charIdx++;
+          setTimeout(type, 80);
+        } else {
+          lineIdx++;
+          charIdx = 0;
+          setTimeout(type, 250);
+        }
+      }
+      type();
+    })();
+  </script>

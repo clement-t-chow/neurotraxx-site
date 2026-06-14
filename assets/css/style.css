@@ -88,6 +88,21 @@ a { color: var(--accent); text-decoration: none; }
   line-height: 1.15;
 }
 
+.typewriter {
+  white-space: pre-line;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  margin-left: 0.05em;
+  animation: typewriter-blink 0.8s step-end infinite;
+}
+
+@keyframes typewriter-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
 .hero-content p {
   font-size: 1.1rem;
   color: var(--text-dim);
