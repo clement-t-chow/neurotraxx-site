@@ -191,6 +191,28 @@ a { color: var(--accent); text-decoration: none; }
 
   .screens {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .video-wrap {
+    max-width: 100%;
+  }
+
+  footer {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+  .eyebrow {
+    font-size: 0.75rem;
   }
 }
 
