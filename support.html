@@ -1,0 +1,56 @@
+---
+layout: default
+title: Support
+permalink: /support/
+---
+<main>
+  <section class="section">
+    <h2>Support</h2>
+    <p>
+      Need help with NeuroTraxx, hit an issue, or have a question about your
+      subscription? Reach out and we'll get back to you as soon as we can.
+    </p>
+    <p>
+      <a class="cta" href="mailto:support@neurotraxx.com">Email Support</a>
+    </p>
+  </section>
+
+  <section class="section alt">
+    <h2>Submit a Custom Fiducial or Frame</h2>
+    <p>
+      Using a stereotactic frame or fiducial configuration that NeuroTraxx
+      doesn't yet support? Send us the details below and our team will review
+      it for inclusion in a future update.
+    </p>
+
+    <form
+      class="support-form"
+      action="https://formsubmit.co/support@neurotraxx.com"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <input type="hidden" name="_subject" value="New custom fiducial/frame submission">
+      <input type="hidden" name="_template" value="table">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="institution">Institution / Organization</label>
+      <input type="text" id="institution" name="Institution">
+
+      <label for="frame">Frame or Fiducial Name</label>
+      <input type="text" id="frame" name="Frame or Fiducial Name" required>
+
+      <label for="description">Description</label>
+      <textarea id="description" name="Description" rows="5" placeholder="Describe the frame/fiducial geometry, coordinate conventions, and intended use." required></textarea>
+
+      <label for="file">Attach Files (specs, CAD, coordinate files, images)</label>
+      <input type="file" id="file" name="Attachment" multiple>
+
+      <button type="submit" class="cta">Submit</button>
+    </form>
+  </section>
+</main>
