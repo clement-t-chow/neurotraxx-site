@@ -56,6 +56,39 @@ a { color: var(--accent); text-decoration: none; }
 }
 .nav-links a:hover { color: var(--text); }
 
+.nav-links .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.nav-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  min-width: 180px;
+  z-index: 50;
+  box-shadow: 0 12px 30px -12px rgba(0,0,0,0.6);
+}
+.nav-links .dropdown:hover .dropdown-menu,
+.nav-links .dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+.nav-links .dropdown-menu a {
+  display: block;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  text-align: left;
+}
+.nav-links .dropdown-menu a:hover {
+  background: var(--bg-alt);
+}
+
 .hero {
   background: radial-gradient(circle at top right, #1b2a3f, var(--bg) 60%);
   border-bottom: 1px solid var(--border);
@@ -346,6 +379,20 @@ footer .disclaimer {
   .nav-links a {
     margin: 0;
     font-size: 0.9rem;
+  }
+  .nav-links .dropdown-menu {
+    position: static;
+    transform: none;
+    display: none;
+    border: none;
+    box-shadow: none;
+    padding-left: 0;
+  }
+  .nav-links .dropdown:focus-within .dropdown-menu,
+  .nav-links .dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-content {
