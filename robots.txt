@@ -1,7 +1,9 @@
 ---
 permalink: /robots.txt
 ---
+# NeuroTraxx robots.txt
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: {{ "/sitemap.xml" | absolute_url }}
