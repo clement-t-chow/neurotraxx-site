@@ -136,6 +136,8 @@ a { color: var(--accent); text-decoration: none; }
   color: var(--text-dim);
   border: 1px solid var(--border);
   cursor: not-allowed;
+  width: 100%;
+  text-align: center;
 }
 
 .section {
