@@ -90,6 +90,7 @@ a { color: var(--accent); text-decoration: none; }
 
 .typewriter {
   white-space: pre-line;
+  text-align: left;
 }
 
 .typewriter-cursor {
