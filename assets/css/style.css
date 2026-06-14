@@ -120,6 +120,15 @@ a { color: var(--accent); text-decoration: none; }
   flex-wrap: wrap;
 }
 
+.hero-ctas .cta:not(.disabled) {
+  flex: 1 1 calc(50% - 0.5rem);
+  text-align: center;
+}
+
+.hero-ctas .cta.disabled {
+  flex: 1 1 100%;
+}
+
 .platform-note {
   margin-top: 1rem;
   font-size: 0.85rem;
