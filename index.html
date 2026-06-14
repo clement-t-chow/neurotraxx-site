@@ -135,7 +135,7 @@ title: Subcortical Navigation & Mapping
           html += lines[i] + '<br>';
         }
         html += lines[lineIdx].slice(0, charIdx);
-        textEl.innerHTML = html;
+        textEl.innerHTML = html.replace(/x/g, '<span class="accent-x">X</span>');
       }
 
       function type() {
