@@ -292,7 +292,7 @@ a { color: var(--accent); text-decoration: none; }
 }
 .support-form button {
   margin-top: 1rem;
-  align-self: flex-start;
+  align-self: center;
   border: none;
   cursor: pointer;
 }
