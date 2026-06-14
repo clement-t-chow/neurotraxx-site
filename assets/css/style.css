@@ -131,6 +131,13 @@ a { color: var(--accent); text-decoration: none; }
 }
 .cta.ghost:hover { border-color: var(--accent); color: var(--accent); }
 
+.cta.disabled {
+  background: var(--card-bg);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  cursor: not-allowed;
+}
+
 .section {
   max-width: 1100px;
   margin: 0 auto;
