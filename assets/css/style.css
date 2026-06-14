@@ -194,6 +194,12 @@ a { color: var(--accent); text-decoration: none; }
     gap: 1.25rem;
   }
 
+  .screen img {
+    max-width: 85%;
+    margin: 0 auto;
+    display: block;
+  }
+
   .card {
     padding: 1.25rem;
   }
