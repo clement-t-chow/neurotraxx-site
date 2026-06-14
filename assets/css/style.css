@@ -94,7 +94,7 @@ a { color: var(--accent); text-decoration: none; }
 }
 
 .accent-x {
-  color: var(--accent);
+  color: var(--accent) !important;
 }
 
 .typewriter-cursor {
