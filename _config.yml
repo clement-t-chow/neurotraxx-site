@@ -1,0 +1,13 @@
+title: NeuroTraxx
+description: "NeuroTraxx is a desktop app for exploring DWI tractography and subcortical navigation in 2D and 3D."
+url: "https://neurotraxx.com"
+baseurl: ""
+
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
