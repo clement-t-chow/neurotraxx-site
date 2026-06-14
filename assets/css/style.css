@@ -23,7 +23,7 @@ a { color: var(--accent); text-decoration: none; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 0.25rem 2rem;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -33,7 +33,7 @@ a { color: var(--accent); text-decoration: none; }
   align-items: center;
 }
 .brand img {
-  height: 28px;
+  height: 112px;
   display: block;
 }
 
@@ -86,6 +86,12 @@ a { color: var(--accent); text-decoration: none; }
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.platform-note {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
 }
 
 .hero-image img {
