@@ -129,12 +129,20 @@ title: Subcortical Navigation & Mapping
       var lines = el.dataset.lines.split('|');
       var lineIdx = 0, charIdx = 0;
 
+      function render() {
+        var html = '';
+        for (var i = 0; i < lineIdx; i++) {
+          html += lines[i] + '<br>';
+        }
+        html += lines[lineIdx].slice(0, charIdx);
+        textEl.innerHTML = html;
+      }
+
       function type() {
         if (lineIdx >= lines.length) return;
         var line = lines[lineIdx];
         if (charIdx <= line.length) {
-          var done = lines.slice(0, lineIdx).join('\n');
-          textEl.textContent = (done ? done + '\n' : '') + line.slice(0, charIdx);
+          render();
           charIdx++;
           setTimeout(type, 80);
         } else {
