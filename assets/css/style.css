@@ -271,8 +271,13 @@ a { color: var(--accent); text-decoration: none; }
   grid-column: 1 / -1;
 }
 
+.screen picture {
+  display: block;
+}
+
 .screen img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   border: 1px solid var(--border);
   box-shadow: 0 12px 40px -16px rgba(0,0,0,0.5);
