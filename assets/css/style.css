@@ -124,6 +124,7 @@ a { color: var(--accent); text-decoration: none; }
 .hero-content h1.typewriter {
   white-space: pre-line;
   text-align: left;
+  min-height: calc(2.6rem * 1.15 * 4);
 }
 
 .accent-x {
@@ -402,6 +403,9 @@ footer .disclaimer {
   .hero-content h1 {
     font-size: 1.9rem;
   }
+  .hero-content h1.typewriter {
+    min-height: calc(1.9rem * 1.15 * 4);
+  }
   .hero-content p {
     font-size: 1rem;
   }
@@ -456,6 +460,9 @@ footer .disclaimer {
 @media (max-width: 380px) {
   .hero-content h1 {
     font-size: 1.6rem;
+  }
+  .hero-content h1.typewriter {
+    min-height: calc(1.6rem * 1.15 * 4);
   }
   .eyebrow {
     font-size: 0.75rem;
