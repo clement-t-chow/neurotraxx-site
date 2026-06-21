@@ -377,7 +377,7 @@ footer .disclaimer {
 @media (max-width: 900px) {
   .hero-content {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: left;
     padding: 3rem 1.5rem 4rem;
   }
   .hero-ctas { justify-content: center; }
