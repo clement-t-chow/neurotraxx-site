@@ -52,6 +52,8 @@ a { color: var(--accent); text-decoration: none; }
   width: auto;
   display: block;
   margin-left: 0.75rem;
+  position: relative;
+  top: 8px;
 }
 
 .nav-links {
