@@ -42,10 +42,16 @@ a { color: var(--accent); text-decoration: none; }
   align-items: center;
   flex-shrink: 0;
 }
-.brand img {
+.brand-icon {
   height: 48px;
   width: auto;
   display: block;
+}
+.brand-logotype {
+  height: 28px;
+  width: auto;
+  display: block;
+  margin-left: 0.75rem;
 }
 
 .nav-links {
@@ -381,8 +387,11 @@ footer .disclaimer {
     padding: 0.75rem 1rem;
     gap: 0.5rem;
   }
-  .brand img {
-    height: 38px;
+  .brand-icon {
+    height: 36px;
+  }
+  .brand-logotype {
+    height: 22px;
   }
   .nav-links {
     flex-wrap: wrap;
