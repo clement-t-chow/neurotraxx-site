@@ -48,7 +48,7 @@ a { color: var(--accent); text-decoration: none; }
   display: block;
 }
 .brand-logotype {
-  height: 28px;
+  height: 48px;
   width: auto;
   display: block;
   margin-left: 0.75rem;
@@ -391,7 +391,7 @@ footer .disclaimer {
     height: 36px;
   }
   .brand-logotype {
-    height: 22px;
+    height: 36px;
   }
   .nav-links {
     flex-wrap: wrap;
