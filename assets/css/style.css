@@ -129,9 +129,9 @@ a { color: var(--accent); text-decoration: none; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 10vh 2rem 4rem;
   background: radial-gradient(ellipse at center, #1a2d42 0%, var(--bg) 68%);
   position: relative;
 }
@@ -157,7 +157,7 @@ a { color: var(--accent); text-decoration: none; }
 }
 
 .intro-desc {
-  max-width: 520px;
+  max-width: 400px;
   font-size: 1.15rem;
   color: var(--text-dim);
   line-height: 1.75;
