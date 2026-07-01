@@ -498,7 +498,8 @@ footer .disclaimer {
 
 @media (max-width: 600px) {
   .intro {
-    padding: 4vh 1.5rem 3rem;
+    padding: 2rem 1.5rem 5rem;
+    justify-content: center;
   }
   .intro-brand {
     gap: 1rem;
