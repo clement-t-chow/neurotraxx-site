@@ -13,6 +13,7 @@
 {% endif %}
 </head>
 <body>
+  <div class="navbar-wrap" id="navbar-wrap">
   <nav class="navbar">
     <a href="{{ '/' | relative_url }}" class="brand">
       <img src="{{ '/assets/img/neurotraxx-logo.png' | relative_url }}" alt="NeuroTraxx" class="brand-icon">
@@ -63,7 +64,28 @@
       <a href="{{ '/' | relative_url }}#contact">Contact</a>
     </div>
   </nav>
+  </div>
 
   {{ content }}
+
+  <script>
+    (function () {
+      var wrap = document.getElementById('navbar-wrap');
+      var intro = document.querySelector('.intro');
+      if (!intro) {
+        wrap.classList.add('visible');
+        return;
+      }
+      function update() {
+        if (window.scrollY > intro.offsetHeight * 0.5) {
+          wrap.classList.add('visible');
+        } else {
+          wrap.classList.remove('visible');
+        }
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+  </script>
 </body>
 </html>

@@ -19,7 +19,6 @@ description: NeuroTraxx delivers precision tools for advanced neuroimaging and i
     <div class="hero-content">
       <span class="eyebrow">Explore the brain, your way</span>
       <h1 class="typewriter" data-lines="neuroscience.|exploration.|stereotaxy.|navigation."><span class="typewriter-text"></span><span class="typewriter-cursor">|</span></h1>
-      <p>NeuroTraxx turns ultra-high-field (UHF) structural and diffusion MRI into living 3D maps of the brain's wiring — letting you explore white matter pathways and subcortical structures with fluid, synchronized 2D and 3D views. Built to support navigation for MER and DBS workflows.</p>
       <div class="hero-ctas">
         <a class="cta" href="#contact">Get in touch</a>
         <a class="cta ghost" href="#screens">See it in action</a>
@@ -165,6 +164,15 @@ description: NeuroTraxx delivers precision tools for advanced neuroimaging and i
           setTimeout(type, 250);
         }
       }
-      type();
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            observer.disconnect();
+            setTimeout(type, 800);
+          }
+        });
+      }, { threshold: 0.4 });
+      observer.observe(el);
     })();
   </script>
