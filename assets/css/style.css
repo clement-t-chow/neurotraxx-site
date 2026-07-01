@@ -157,7 +157,7 @@ a { color: var(--accent); text-decoration: none; }
 }
 
 .intro-desc {
-  max-width: 680px;
+  max-width: 650px;
   font-size: 1.15rem;
   color: var(--text-dim);
   line-height: 1.75;
