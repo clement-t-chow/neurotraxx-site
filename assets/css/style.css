@@ -160,6 +160,7 @@ a { color: var(--accent); text-decoration: none; }
 
 .intro-desc {
   max-width: 600px;
+  text-align: center;
   font-size: 1.15rem;
   color: var(--text-dim);
   line-height: 1.75;
