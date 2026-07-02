@@ -21,7 +21,7 @@ description: NeuroTraxx delivers precision tools for advanced neuroimaging and i
       <h1 class="typewriter" data-lines="neuroscience.|exploration.|stereotaxy.|navigation."><span class="typewriter-text"></span><span class="typewriter-cursor">|</span></h1>
       <div class="hero-ctas">
         <a class="cta" href="#contact">Get in touch</a>
-        <a class="cta ghost" href="#screens">See it in action</a>
+        <a class="cta ghost" href="#features">See it in action</a>
         <span class="cta disabled" aria-disabled="true">Download</span>
       </div>
       <p class="platform-note">Currently supported on Apple Silicon (M-series) Macs only.</p>
@@ -35,70 +35,7 @@ description: NeuroTraxx delivers precision tools for advanced neuroimaging and i
   </header>
 
   <main>
-    <section id="features" class="section">
-      <h2>What NeuroTraxx Can Do</h2>
-<div class="grid">
-        <div class="card">
-          <h3>Tractography, Unlocked</h3>
-          <p>Turn diffusion-weighted scans into reconstructed white matter
-             pathways — see the brain's connections come to life.</p>
-        </div>
-        <div class="card">
-          <h3>3D That Actually Moves</h3>
-          <p>Spin, slice, and explore a fully interactive 3D brain alongside
-             synchronized axial, sagittal, and coronal views.</p>
-        </div>
-        <div class="card">
-          <h3>Built-In Frame &amp; Coordinate Tools</h3>
-          <p>Switch between coordinate systems and stereotactic frames
-             on the fly, with everything kept in sync.</p>
-        </div>
-        <div class="card">
-          <h3>Subcortical Navigation</h3>
-          <p>Mark points of interest and trace paths through subcortical
-             structures, viewed from every angle at once.</p>
-        </div>
-        <div class="card">
-          <h3>MER &amp; DBS Ready</h3>
-          <p>Navigate microelectrode recording (MER) tracks and deep brain
-             stimulation (DBS) targets with synchronized anatomical context.</p>
-        </div>
-        <div class="card">
-          <h3>Runs on Your Machine</h3>
-          <p>A fast, native desktop app built with PyQt6 and VTK — no
-             cloud, no waiting.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="screens" class="section alt">
-      <h2>Take a Look Inside</h2>
-      <div style="margin-bottom: 3rem;"></div>
-      <div class="screens">
-        <figure class="screen">
-          <picture>
-            <source srcset="{{ '/assets/img/screenshot_dataimport.webp' | relative_url }}" type="image/webp">
-            <img src="{{ '/assets/img/screenshot_dataimport.png' | relative_url }}" alt="Data import screen with directory selection and import options" width="1599" height="999" loading="lazy">
-          </picture>
-          <figcaption>Drop in your data — NeuroTraxx takes care of the organizing.</figcaption>
-        </figure>
-        <figure class="screen">
-          <picture>
-            <source srcset="{{ '/assets/img/screenshot_planning.webp' | relative_url }}" type="image/webp">
-            <img src="{{ '/assets/img/screenshot_planning.png' | relative_url }}" alt="Subcortical navigation view with point controls alongside axial, sagittal, coronal and 3D brain views" width="1599" height="999" loading="lazy">
-          </picture>
-          <figcaption>Mark points of interest and follow them across every view, in 2D and 3D, at once.</figcaption>
-        </figure>
-      </div>
-
-      <div class="screens">
-        <figure class="screen wide">
-          <figcaption>Validate trajectories intraoperatively by correlating MER recordings with structural and diffusion imaging in real time.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="how-it-works" class="section">
+    <section id="how-it-works" class="section alt">
       <h2>How It Works</h2>
       <p class="section-sub">From raw imaging data to surgical guidance in four steps.</p>
       <ol class="steps">
@@ -113,6 +50,47 @@ description: NeuroTraxx delivers precision tools for advanced neuroimaging and i
       </ol>
     </section>
 
+    <section id="features" class="section">
+      <h2>What NeuroTraxx Can Do</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front"><h3>Tractography, Unlocked</h3></div>
+            <div class="card-back"><p>Turn diffusion-weighted scans into reconstructed white matter pathways — see the brain's connections come to life.</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front"><h3>3D That Actually Moves</h3></div>
+            <div class="card-back"><p>Spin, slice, and explore a fully interactive 3D brain alongside synchronized axial, sagittal, and coronal views.</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front"><h3>Built-In Frame &amp; Coordinate Tools</h3></div>
+            <div class="card-back"><p>Switch between coordinate systems and stereotactic frames on the fly, with everything kept in sync.</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front"><h3>Subcortical Navigation</h3></div>
+            <div class="card-back"><p>Mark points of interest and trace paths through subcortical structures, viewed from every angle at once.</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front"><h3>MER &amp; DBS Ready</h3></div>
+            <div class="card-back"><p>Navigate microelectrode recording (MER) tracks and deep brain stimulation (DBS) targets with synchronized anatomical context.</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front"><h3>Runs on Your Machine</h3></div>
+            <div class="card-back"><p>A fast, native desktop app built with PyQt6 and VTK — no cloud, no waiting.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="contact" class="section alt">
       <h2>Contact</h2>
@@ -164,14 +142,32 @@ description: NeuroTraxx delivers precision tools for advanced neuroimaging and i
         }
       }
 
-      var observer = new IntersectionObserver(function (entries) {
+      var twObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
-            observer.disconnect();
+            twObserver.disconnect();
             setTimeout(type, 800);
           }
         });
       }, { threshold: 0.4 });
-      observer.observe(el);
+      twObserver.observe(el);
+    })();
+
+    (function () {
+      var cards = document.querySelectorAll('.card');
+      if (!cards.length) return;
+      var cardObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var card = entry.target;
+            var idx = Array.from(cards).indexOf(card);
+            setTimeout(function () {
+              card.classList.add('revealed');
+            }, idx * 120);
+            cardObserver.unobserve(card);
+          }
+        });
+      }, { threshold: 0.15 });
+      cards.forEach(function (card) { cardObserver.observe(card); });
     })();
   </script>

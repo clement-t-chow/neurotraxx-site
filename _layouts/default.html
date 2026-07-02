@@ -22,6 +22,14 @@
     <div class="nav-links">
 
       <div class="dropdown">
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <div class="dropdown-menu">
+          <a href="{{ '/about/#our-story' | relative_url }}">Our Story</a>
+          <a href="{{ '/about/#team' | relative_url }}">Team</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
         <a href="{{ '/product/' | relative_url }}">Product</a>
         <div class="dropdown-menu">
           <a href="{{ '/product/' | relative_url }}">Overview</a>
@@ -39,9 +47,6 @@
         </div>
       </div>
 
-      <a href="{{ '/solutions/' | relative_url }}">Solutions</a>
-      <!-- <a href="{{ '/pricing/' | relative_url }}">Pricing</a> -->
-
       <div class="dropdown">
         <a href="{{ '/resources/' | relative_url }}">Resources</a>
         <div class="dropdown-menu">
@@ -50,14 +55,6 @@
           <a href="{{ '/support/' | relative_url }}">Support</a>
           <a href="{{ '/resources/faq/' | relative_url }}">FAQ</a>
           <a href="{{ '/publications/' | relative_url }}">Publications</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <div class="dropdown-menu">
-          <a href="{{ '/about/#our-story' | relative_url }}">Our Story</a>
-          <a href="{{ '/about/#team' | relative_url }}">Team</a>
         </div>
       </div>
 
