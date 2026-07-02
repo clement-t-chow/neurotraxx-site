@@ -421,13 +421,13 @@ a { color: var(--accent); text-decoration: none; }
 
 .steps {
   max-width: 560px;
-  margin: 0 auto 0 32% !important;
+  margin: 0 auto 0 20% !important;
   padding-left: 1.5rem;
 }
 
 #how-it-works .section-sub {
   text-align: left;
-  margin-left: 32% !important;
+  margin-left: 20% !important;
   margin-right: auto !important;
   max-width: 560px;
 }
