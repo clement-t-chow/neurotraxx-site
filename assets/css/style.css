@@ -426,8 +426,8 @@ a { color: var(--accent); text-decoration: none; }
 }
 
 #how-it-works .section-sub {
-  text-align: left;
-  margin-left: 20% !important;
+  text-align: center;
+  margin-left: auto !important;
   margin-right: auto !important;
   max-width: 560px;
 }
