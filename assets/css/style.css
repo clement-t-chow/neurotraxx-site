@@ -651,7 +651,7 @@ footer .disclaimer {
   }
 
   .steps {
-    margin-left: auto !important;
+    margin-left: 0 !important;
     margin-right: auto !important;
     padding-left: 1.25rem;
   }
