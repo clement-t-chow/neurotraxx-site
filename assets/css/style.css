@@ -369,8 +369,10 @@ a { color: var(--accent); text-decoration: none; }
   width: 100%;
   min-height: 160px;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   opacity: 0;
   transform: rotateY(-90deg);
+  -webkit-transform: rotateY(-90deg);
   transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1),
               opacity 0.3s ease;
 }
@@ -378,11 +380,13 @@ a { color: var(--accent); text-decoration: none; }
 .card.revealed .card-inner {
   opacity: 1;
   transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
 }
 
 .card.revealed:hover .card-inner,
 .card.revealed.flipped .card-inner {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 /* Subpages: push main below fixed navbar */
@@ -393,7 +397,7 @@ body:not(:has(.intro)) main {
 .card-front,
 .card-back {
   position: absolute;
-  inset: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 12px;
@@ -407,6 +411,7 @@ body:not(:has(.intro)) main {
 
 .card-back {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .card-front h3 {
