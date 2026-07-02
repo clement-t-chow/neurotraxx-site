@@ -380,8 +380,14 @@ a { color: var(--accent); text-decoration: none; }
   transform: rotateY(0deg);
 }
 
-.card.revealed:hover .card-inner {
+.card.revealed:hover .card-inner,
+.card.revealed.flipped .card-inner {
   transform: rotateY(180deg);
+}
+
+/* Subpages: push main below fixed navbar */
+body:not(:has(.intro)) main {
+  padding-top: 76px;
 }
 
 .card-front,
@@ -421,7 +427,7 @@ a { color: var(--accent); text-decoration: none; }
 
 .steps {
   max-width: 560px;
-  margin: 0 auto 0 20% !important;
+  margin: 0 auto 0 28% !important;
   padding-left: 1.5rem;
 }
 
@@ -645,12 +651,12 @@ footer .disclaimer {
   }
 
   .steps {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
     padding-left: 1.25rem;
   }
   #how-it-works .section-sub {
-    margin-left: auto;
+    margin-left: auto !important;
     text-align: center;
   }
 
